@@ -118,11 +118,11 @@ Colour next(Ray ray){
     Vector3d start({ray.start_.x(), ray.start_.y(), ray.start_.z()});
     for(int i = 0; i < orbs.size(); i++){
         orbs[i].updateIntersection(inters, start, ray.d_);
-        
+
     }
-    for(int i = 0; i < krpice.size(); i++){
-        krpice[i].updateIntersection(inters, start, ray.d_);
-    }
+//    for(int i = 0; i < krpice.size(); i++){
+//        krpice[i].updateIntersection(inters, start, ray.d_);
+//    }
     if(inters.lambda_ != INFINITY)
         return setColour(inters.object_, ray, inters);
     return Colour(0,0,0);
@@ -273,6 +273,7 @@ int main(int argc, char * argv[]) {
     glutInitWindowSize(800, 600);
     glutInitWindowPosition(0, 0);
     glutCreateWindow("Pls work");
+//    gluOrtho2D(0.0, width, 0.0, height);
     glutDisplayFunc(display);
     glutReshapeFunc(reshape);
     glutReportErrors();
@@ -295,13 +296,18 @@ void display() {
     for(int y = 0; y < height; y++){
         for(int x = 0; x < width; x++){
             glBegin(GL_POINTS);
-            glColor3f(pixel_cols[x][y].r_, pixel_cols[x][y].g_, pixel_cols[x][y].b_);
+            glColor3f(pixel_cols[y][x].r_, pixel_cols[y][x].g_, pixel_cols[y][x].b_);
             glVertex2i(x, y);
             glEnd();
-            
+
         }
 
     }
+//    glColor3f(1, 1, 1);
+//    glBegin(GL_LINES);
+//    glVertex2i(0, 0);
+//    glVertex2i(width, height);
+//    glEnd();
 
     
 
@@ -318,7 +324,7 @@ void reshape(int w, int h) {
     glMatrixMode (GL_PROJECTION);        // aktivirana matrica projekcije
     glLoadIdentity ();
 //    gluPerspective(angle_v/radToC, (float)width/height, 1, dist); // kut pogleda, x/y, prednja i straznja ravnina odsjecanja
-    glViewport(0, 0, width, height);
+//    glViewport(0, 0, width, height);
     gluOrtho2D(0, width-1, height-1, 0);
     glMatrixMode (GL_MODELVIEW);         // aktivirana matrica modela
     glLoadIdentity ();
