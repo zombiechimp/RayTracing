@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ray_from_eye(int, int):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Ray::Ray(double, double, double):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "end">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "raytrace():main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "pixel_cols">
+            </PersistentString>
+            <PersistentString
+               value = "orbs">
+            </PersistentString>
+            <PersistentString
+               value = "krpice">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "next(Ray):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Orb::updateIntersection(Intersection&amp;, Vector&lt;double, 3ul&gt;, Vector&lt;double, 3ul&gt;):classes.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewUp">
+            </PersistentString>
+            <PersistentString
+               value = "angle_h">
+            </PersistentString>
+            <PersistentString
+               value = "krpice">
+            </PersistentString>
+            <PersistentString
+               value = "orbs">
+            </PersistentString>
+            <PersistentString
+               value = "dist">
+            </PersistentString>
+            <PersistentString
+               value = "view">
+            </PersistentString>
+            <PersistentString
+               value = "G">
+            </PersistentString>
+            <PersistentString
+               value = "eye">
+            </PersistentString>
+            <PersistentString
+               value = "angle_v">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
